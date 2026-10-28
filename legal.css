@@ -1,0 +1,23 @@
+/* World Window: about / privacy / terms pages (also the GitHub Pages site) */
+:root { color-scheme: light dark; --text: #1d2733; --muted: #5d6b78; --line: #d9e1e8; --accent: #1f5f9e; --page: #f7f9fb; }
+@media (prefers-color-scheme: dark) {
+  :root { --text: #e3f2ff; --muted: #8db0cc; --line: #2c4a66; --accent: #a9d6ff; --page: #050d17; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--page); color: var(--text);
+  font: 16px/1.75 system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+}
+main { max-width: 760px; margin: 0 auto; padding: 48px 24px 64px; }
+h1 { margin: 0 0 4px; font-size: 30px; letter-spacing: .5px; }
+h2 { margin: 36px 0 8px; font-size: 20px; }
+.sub, .meta { color: var(--muted); }
+.zh { color: var(--muted); }
+a { color: var(--accent); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+nav.top { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; font-size: 15px; }
+figure { margin: 24px 0; }
+figure img { width: 100%; height: auto; border: 1px solid var(--line); border-radius: 10px; }
+figcaption { margin-top: 6px; font-size: 14px; color: var(--muted); }
+footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+code { font-size: .92em; }
